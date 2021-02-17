@@ -21,3 +21,4 @@ kustomize edit set image surenmcode/strings-api=surenmcode/strings-api:5.5
 kustomize build .
 ```
 
+### Config picked up by ArgoCD. Manual Sync for production and Auto Sync for Dev
