@@ -16,7 +16,7 @@ images:
   newTag: 6.0.9
 - name: surenmcode/strings-api
   newName: surenmcode/strings-api
-  newTag: main-13
+  newTag: main-14
 - name: surenmcode/strings-frontend
   newName: surenmcode/strings-frontend
-  newTag: main-13
+  newTag: main-14
