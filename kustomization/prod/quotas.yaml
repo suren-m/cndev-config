@@ -6,4 +6,4 @@ spec:
   hard:
     pods: "10"
     limits.cpu: "2"
-    limits.memory: "1Gi"
+    limits.memory: "3Gi"
