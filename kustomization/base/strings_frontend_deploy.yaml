@@ -22,6 +22,12 @@ spec:
           name: strings-frontend
           env:
             - name: API_PATH_BASE
-              value: "strings-app"
-          resources: {}
+              value: "strings-api"
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
 status: {}

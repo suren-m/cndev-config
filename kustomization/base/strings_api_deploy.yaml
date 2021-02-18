@@ -20,5 +20,11 @@ spec:
       containers:
         - image: surenmcode/strings-api
           name: strings-api
-          resources: {}
+          resources:
+            requests:
+              cpu: 25m
+              memory: 128Mi
+            limits:
+              cpu: 30m
+              memory: 256Mi
 status: {}
