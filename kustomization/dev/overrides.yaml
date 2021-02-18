@@ -11,6 +11,6 @@ kind: Deployment
 metadata:
   name: strings-api
 spec:
-  replicas: 2
+  replicas: 1
 
 
