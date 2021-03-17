@@ -22,9 +22,9 @@ spec:
           name: strings-api
           resources:
             requests:
-              cpu: 400m
+              cpu: 100m
               memory: 64Mi
             limits:
-              cpu: 500m
+              cpu: 125m
               memory: 128Mi
 status: {}
