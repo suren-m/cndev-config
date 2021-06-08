@@ -4,6 +4,6 @@ metadata:
   name: strings-app-quota
 spec:
   hard:
-    pods: "10"
-    limits.cpu: "2"
-    limits.memory: "3Gi"
+    pods: "20"
+    limits.cpu: "4"
+    limits.memory: "4Gi"
