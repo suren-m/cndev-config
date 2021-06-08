@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ResourceQuota
-metadata:
-  name: strings-app-quota
-spec:
-  hard:
-    pods: "20"
-    limits.cpu: "4"
-    limits.memory: "4Gi"
