@@ -6,6 +6,6 @@ spec:
   limits:
     - type: Container
       max:
-        cpu: "250m"
+        cpu: "500m"
       min:
-        cpu: "25m"
+        cpu: "10m"
