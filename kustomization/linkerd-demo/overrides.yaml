@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strings-frontend
+spec:
+  replicas: 2
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strings-api
+spec:
+  replicas: 1
+
+---
+apiVersion: v1
+kind: Service
+metadata:  
+  name: strings-frontend
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  type: LoadBalancer
