@@ -1,0 +1,15 @@
+#https://istio.io/latest/docs/ops/common-problems/network-issues/#route-rules-have-no-effect-on-ingress-gateway-requests
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: strings-frontend-istio-gw
+spec:
+  selector:
+    istio: ingressgateway # use Istio default gateway implementation
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - "*"

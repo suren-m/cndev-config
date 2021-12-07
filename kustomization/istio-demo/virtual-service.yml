@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: strings-frontend-istio-vs
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - strings-frontend-istio-gw
+  http:
+    - match:
+        - uri:
+            prefix: /strings-app
+      route:
+        - destination:
+            port:
+              number: 80
+            host: strings-frontend.istio-demo.svc.cluster.local
