@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   labels:
     app: strings-app
+    product: demo-app
+    owner: suren
   name: strings-api
 spec:
   replicas: 10
@@ -16,6 +18,8 @@ spec:
       creationTimestamp: null
       labels:
         app: strings-api
+        product: demo-app
+        owner: suren
     spec:
       containers:
         - image: surenmcode/strings-api
