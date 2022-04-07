@@ -3,9 +3,10 @@ kind: Namespace
 metadata:
   creationTimestamp: null
   name: dev
+  # don't enable mesh when using bridge to k8s
   #labels:
     #istio-injection: enabled
-  annotations:
-    linkerd.io/inject: enabled
+  #annotations:
+    #linkerd.io/inject: enabled
 spec: {}
 status: {}
